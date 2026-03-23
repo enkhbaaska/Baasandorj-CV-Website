@@ -2,7 +2,6 @@
 
 import { useLanguage } from '@/lib/language-context'
 import { MapPin, Mail, Phone } from 'lucide-react'
-import Image from 'next/image'
 
 export function Hero() {
   const { t } = useLanguage()
@@ -12,13 +11,10 @@ export function Hero() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="flex items-center gap-5">
           <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white/20 shadow-lg shrink-0">
-            <Image
-              src= "/profile.jpg"
+            <img
+              src="/profile.jpg"
               alt="Baasandorj Enkhjargal"
-              width={128}
-              height={128}
               className="w-full h-full object-cover object-top"
-              priority
             />
           </div>
 

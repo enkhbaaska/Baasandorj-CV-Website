@@ -4,7 +4,6 @@ import { LanguageProvider } from "@/lib/language-context"
 import { Header } from "@/components/cv/header"
 import { Footer } from "@/components/cv/footer"
 import { Music, ArrowLeft } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 
 
@@ -65,11 +64,9 @@ export default function RecordingsPage() {
               </Link>
               <div className="flex items-center gap-5">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white/20 shrink-0">
-                  <Image
+                  <img
                     src="/organ.jpg"
-                    alt="Baasandorj at the organ"
-                    width={128}
-                    height={128}
+                    alt="Baasandorj Enkhjargal"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
