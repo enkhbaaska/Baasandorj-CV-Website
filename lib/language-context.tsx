@@ -161,6 +161,7 @@ const translations = {
     "experience.ubmetro.desc1": "React ашиглан метро төслийн албан ёсны вэбсайтыг хөгжүүлж, front-end компонентуудыг back-end API-тай холбон 5 хоногт үйлдвэрлэлд бэлэн сайт бүтээв.",
     "experience.ubmetro.desc2": "Facebook-д зар сурталчилгааны кампанит ажилд зориулж Adobe Photoshop дээр сурталчилгааны зурагт хуудас зохиож, [ойролцоогоор](https://facebook.com) 100 лавлагаа авав.",
     "experience.ubmetro.desc3": "Python ашиглан Google Colab дээр тасалбарын үнэ тогтоох алгоритм үүсгэж, өдөр тутмын орлогыг тооцоолж, ашгийг нэмэгдүүлэх оновчтой үнийг тодорхойлов.",
+    "experience.ubmetro.desc4": "Conducted research on international metro ticket pricing, collecting and analysing data to support pricing strategy decisions.",
 
     "experience.mbank.role": "Өгөгдлийн шинжээч дадлагажигч",
     "experience.mbank.company": "МБанк",
@@ -169,7 +170,8 @@ const translations = {
     "experience.mbank.desc1": "~10,000 гүйлгээний болон дансны бүртгэлийг боловсруулж, scikit-learn ашиглан зээл, хадгаламж, гүйлгээний дансуудын хоорондын хамаарлыг тодорхойлов.",
     "experience.mbank.desc2": "3 сарын хэрэглэгчийн идэвхи��н өгөгдлийг цэвэрлэж, шинжилж, зан үйлийн сегментүүдийг тодорхойлж, оролцогч талуудад тайлангаар танилцуулав.",
     "experience.mbank.desc3": "Монголын хамгийн дэвшилтэт дижитал банкны системд өгөгдөлд суурилсан шийдвэр гаргах, үйл ажиллагааны практик туршлага хуримтлуулав.",
-    
+    "experience.mbank.desc4": "Conducted research on international metro ticket pricing, collecting and analysing data to support pricing strategy decisions.",
+
     "experience.upwork.role": "Чөлөөт хөгжүүлэгч",
     "experience.upwork.company": "Upwork",
     "experience.upwork.location": "Лондон, Их Британи",
@@ -177,7 +179,8 @@ const translations = {
     "experience.upwork.desc1": "Үйлчлүүлэгчийн үндсэн бүтээгдэхүүний API интеграцийг хадгалж, интеграцитай холбоотой алдааг 30% бууруулав.",
     "experience.upwork.desc2": "MySQL болон MongoDB өгөгдлийн санг удирдаж, оновчлов, 5 хүснэгтэд өгөгдлийн бүрэн бүтэн байдлыг хадгалав.",
     "experience.upwork.desc3": "Кодын тогтвортой байдлыг сайжруулж, давтагдах асуудлаас сэргийлэхийн тулд 3 функц тест хийв.",
-    
+    "experience.upwork.desc4": "Updated project repositories on GitHub documenting code changes.",
+
     "experience.organ.role": "Органы тэтгэлэгт оюутан",
     "experience.organ.company": "Лийдс Кафедрал",
     "experience.organ.location": "Лийдс, Их Британи",
@@ -191,7 +194,9 @@ const translations = {
     "education.york.school": "Йоркийн Их Сургууль",
     "education.york.date": "2028 оны 7-р сард төгсөнө",
     "education.york.desc1": "Unreal Engine болон C++ ашиглан тоглоомын механикт төвлөрсөн хувийн тоглоом хөгжүүлэх төсөл бэлтгэж байна.",
-    
+    "education.york.desc2": "Modules include Data structures, [Hardware systems](https://simplecpudesign.com/minimal_cpu/index.html) and Human computer interaction",
+    "education.york.desc3": "President of [Game development](https://yorksu.org/activities/view/game-development-society) society and Mongolian society",
+
     "education.ai.degree": "Хиймэл оюун ухааны сургалт",
     "education.ai.school": "AI Academy Asia",
     "education.ai.location": "Улаанбаатар, Монгол",
@@ -209,7 +214,8 @@ const translations = {
     "education.leeds.date": "2021 оны 6-р сар",
     "education.leeds.desc1": "Статистик механик, Квант механик, Цахилгаан соронзон, Бионанотехнологийн хичээлүүд.",
     "education.leeds.desc2": "Python дээр машин сургалтын аргыг хэрэглэн биозадлагддаг, байгальд ээлтэй целлюлозын ширхэг хөгжүүлэх [судалгааны баг](https://www.leeds.ac.uk/news-enterprise/news/article/4718/reducing-the-environmental-impact-of-cellulose-films)тай хамтран ажилласан.",
-    
+    "education.leeds.desc3": "Participated in a [game jam](https://v3.globalgamejam.org/2020/games/village-school-5) using Raylib.",
+
     "education.school.degree": "Дунд сургууль",
     "education.school.school": "Christ's Hospital School",
     "education.school.location": "Хоршам, Вест Сассекс",
