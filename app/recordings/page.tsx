@@ -65,7 +65,7 @@ export default function RecordingsPage() {
               <div className="flex items-center gap-5">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white/20 shrink-0">
                   <img
-                    src="/organ.jpg"
+                    src="/organ.JPG"
                     alt="Baasandorj Enkhjargal"
                     className="w-full h-full object-cover object-top"
                   />
