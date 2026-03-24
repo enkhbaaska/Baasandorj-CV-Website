@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/lib/language-context'
-import { MapPin, Mail, Phone } from 'lucide-react'
+import { MapPin, Mail, Phone, Github, Linkedin } from 'lucide-react'
 
 export function Hero() {
   const { t } = useLanguage()
@@ -39,6 +39,24 @@ export function Hero() {
               >
                 <Phone className="h-3 w-3" />
                 +44 7915 551800
+              </a>
+              <a
+                href="https://github.com/enkhbaaska"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-primary-foreground transition-colors"
+              >
+                <Github className="h-3 w-3" />
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/baasandorj-enkhjargal-3bb922182/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-primary-foreground transition-colors"
+              >
+                <Linkedin className="h-3 w-3" />
+                LinkedIn
               </a>
               <span className="flex items-center gap-1">
                 <MapPin className="h-3 w-3" />
