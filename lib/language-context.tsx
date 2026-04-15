@@ -142,117 +142,117 @@ const translations = {
     "nav.skills": "Ур чадвар",
     "nav.recordings": "Бичлэгүүд",
     "nav.contact": "Холбоо барих",
-    
+
     // Hero
     "hero.title": "Баасандорж Энхжаргал",
-    "hero.subtitle": "Компьютерийн шинжлэх ухаан & Хиймэл оюун ухаан",
+    "hero.subtitle": "Компьютерын шинжлэх ухаан ба хиймэл оюун ухаан",
     "hero.location": "Йорк, Их Британи",
-    
+
     // Summary
     "summary.title": "Товч танилцуулга",
-    "summary.content": "Йоркийн Их Сургуульд Компьютерийн шинжлэх ухаан, хиймэл оюун ухааны чиглэлээр суралцаж буй Британи-Монгол оюутан. Өмнө нь Лийдсийн Их Сургуульд Физикийн чиглэлээр суралцсан. Монголын тэргүүлэгч дижитал банкны платформ МБанкинд аналитик тайлан гаргах зэрэг академик болон үйлдвэрлэлийн төслүүдээр машин сургалт, өгөгдлийн шинжилгээ, програм хангамж хөгжүүлэлтийн туршлагатай. Лийдс Кафедралын хуучин Органы тэтгэлэгт оюутан, Их Британи даяар сүмүүдэд тоглодог байсан.",
-    
+    "summary.content": "Их Британийн Йоркийн Их Сургуульд Компьютерын шинжлэх ухаан ба хиймэл оюун ухааны чиглэлээр суралцаж буй Британи–Монгол оюутан. Өмнө нь Лидсийн Их Сургуульд Физикийн чиглэлээр бакалаврын түвшний сургалтад хамрагдсан. Машин сургалт, өгөгдлийн шинжилгээ, програм хангамжийн хөгжүүлэлтийн чиглэлээр академик болон үйлдвэрлэлийн төслүүд дээр ажиллаж байсан туршлагатай. Үүнд Монголын тэргүүлэх дижитал банкны платформ болох MBank-д аналитик тайлан боловсруулж байсан ажил багтана. Мөн Лидсийн сүмийн органист тэтгэлэгт суралцагч байсан бөгөөд Их Британийн олон сүмүүдэд тоглож байсан.",
+
     // Experience
     "experience.title": "Ажлын туршлага",
     "experience.ubmetro.role": "Төслийн менежментийн дадлагажигч",
     "experience.ubmetro.company": "УБ Метро Төсөл",
     "experience.ubmetro.location": "Улаанбаатар, Монгол",
-    "experience.ubmetro.date": "2025 оны 7-р сар - 8-р сар",
-    "experience.ubmetro.desc1": "React ашиглан метро төслийн албан ёсны вэбсайтыг хөгжүүлж, front-end компонентуудыг back-end API-тай холбон 5 хоногт үйлдвэрлэлд бэлэн сайт бүтээв.",
-    "experience.ubmetro.desc2": "Facebook-д зар сурталчилгааны кампанит ажилд зориулж Adobe Photoshop дээр сурталчилгааны зурагт хуудас зохиож, [ойролцоогоор](https://facebook.com) 100 лавлагаа авав.",
-    "experience.ubmetro.desc3": "Python ашиглан Google Colab дээр тасалбарын үнэ тогтоох алгоритм үүсгэж, өдөр тутмын орлогыг тооцоолж, ашгийг нэмэгдүүлэх оновчтой үнийг тодорхойлов.",
-    "experience.ubmetro.desc4": "Conducted research on international metro ticket pricing, collecting and analysing data to support pricing strategy decisions.",
+    "experience.ubmetro.date": "2025 оны 7-р сар - 2025 оны 8-р сар",
+    "experience.ubmetro.desc1": "React ашиглан метро төслийн албан ёсны вэбсайтыг хөгжүүлж, front-end компонентуудыг back-end API-тай холбон 5 хоногийн дотор ашиглалтад бэлэн сайт бүтээв.",
+    "experience.ubmetro.desc2": "Facebook сурталчилгааны кампанит ажилд зориулан Adobe Photoshop ашиглан постер бүтээж, ойролцоогоор 100 лавлагаа авчирсан.",
+    "experience.ubmetro.desc3": "Python ашиглан Google Colab дээр тасалбарын үнийн алгоритм боловсруулж, өдөр тутмын орлогыг тооцоолж, ашгийг хамгийн их байлгах оновчтой үнийг тодорхойлов.",
+    "experience.ubmetro.desc4": "Олон улсын метроны тасалбарын үнийн талаар судалгаа хийж, үнийн стратегийн шийдвэр гаргалтад дэмжлэг болох өгөгдөл цуглуулж, шинжилгээ хийсэн.",
 
-    "experience.mbank.role": "Өгөгдлийн шинжээч дадлагажигч",
-    "experience.mbank.company": "МБанк",
+    "experience.mbank.role": "Өгөгдлийн шинжээчийн дадлагажигч",
+    "experience.mbank.company": "MBank",
     "experience.mbank.location": "Улаанбаатар, Монгол",
-    "experience.mbank.date": "2025 оны 7-р сар - 8-р сар",
-    "experience.mbank.desc1": "~10,000 гүйлгээний болон дансны бүртгэлийг боловсруулж, scikit-learn ашиглан зээл, хадгаламж, гүйлгээний дансуудын хоорондын хамаарлыг тодорхойлов.",
-    "experience.mbank.desc2": "3 сарын хэрэглэгчийн идэвхи��н өгөгдлийг цэвэрлэж, шинжилж, зан үйлийн сегментүүдийг тодорхойлж, оролцогч талуудад тайлангаар танилцуулав.",
-    "experience.mbank.desc3": "Монголын хамгийн дэвшилтэт дижитал банкны системд өгөгдөлд суурилсан шийдвэр гаргах, үйл ажиллагааны практик туршлага хуримтлуулав.",
-    "experience.mbank.desc4": "Conducted research on international metro ticket pricing, collecting and analysing data to support pricing strategy decisions.",
+    "experience.mbank.date": "2025 оны 7-р сар - 2025 оны 8-р сар",
+    "experience.mbank.desc1": "Ойролцоогоор 10,000 гүйлгээ болон дансны бүртгэлийг боловсруулж, scikit-learn ашиглан зээл, хадгаламж, гүйлгээний дансуудын хоорондын хамаарлыг тодорхойлов.",
+    "experience.mbank.desc2": "3 сарын хэрэглэгчийн идэвхийн өгөгдлийг цэвэрлэж, шинжилгээ хийж, зан төлөвийн сегментүүдийг тодорхойлон, үр дүнг оролцогч талуудад тайлангаар танилцуулав.",
+    "experience.mbank.desc3": "Монголын хамгийн дэвшилтэт дижитал банкны системүүдийн нэг дээр өгөгдөлд суурилсан шийдвэр гаргалт болон үйл ажиллагааны практик туршлага хуримтлуулав.",
+    "experience.mbank.desc4": "Олон улсын метроны тасалбарын үнийн талаар судалгаа хийж, үнийн стратегийн шийдвэр гаргалтад дэмжлэг болох өгөгдөл цуглуулж, шинжилгээ хийсэн.",
 
     "experience.upwork.role": "Чөлөөт хөгжүүлэгч",
     "experience.upwork.company": "Upwork",
     "experience.upwork.location": "Лондон, Их Британи",
     "experience.upwork.date": "2024 оны 9-р сар - 2025 оны 6-р сар",
-    "experience.upwork.desc1": "Үйлчлүүлэгчийн үндсэн бүтээгдэхүүний API интеграцийг хадгалж, интеграцитай холбоотой алдааг 30% бууруулав.",
-    "experience.upwork.desc2": "MySQL болон MongoDB өгөгдлийн санг удирдаж, оновчлов, 5 хүснэгтэд өгөгдлийн бүрэн бүтэн байдлыг хадгалав.",
-    "experience.upwork.desc3": "Кодын тогтвортой байдлыг сайжруулж, давтагдах асуудлаас сэргийлэхийн тулд 3 функц тест хийв.",
-    "experience.upwork.desc4": "Updated project repositories on GitHub documenting code changes.",
+    "experience.upwork.desc1": "Үйлчлүүлэгчийн үндсэн бүтээгдэхүүний API интеграцчиллыг хариуцан ажиллаж, интеграцитай холбоотой алдааг 30%-иар бууруулсан.",
+    "experience.upwork.desc2": "MySQL болон MongoDB өгөгдлийн сангуудыг удирдан оновчтой болгож, 5 хүснэгтийн өгөгдлийн бүрэн бүтэн байдлыг хадгалсан.",
+    "experience.upwork.desc3": "Кодын тогтвортой байдлыг сайжруулж, давтагддаг асуудлаас сэргийлэхийн тулд 3 feature test хэрэгжүүлсэн.",
+    "experience.upwork.desc4": "GitHub дээрх төслийн repository-уудыг шинэчилж, кодын өөрчлөлтүүдийг баримтжуулсан.",
 
-    "experience.organ.role": "Органы тэтгэлэгт оюутан",
-    "experience.organ.company": "Лийдс Кафедрал",
-    "experience.organ.location": "Лийдс, Их Британи",
+    "experience.organ.role": "Органист тэтгэлэгт суралцагч",
+    "experience.organ.company": "Leeds Cathedral",
+    "experience.organ.location": "Лидс, Их Британи",
     "experience.organ.date": "2018 оны 9-р сар - 2019 оны 9-р сар",
-    "experience.organ.desc1": "Органы концерт тоглож, шашны зан үйлд найрал дуучдыг дагалдуулав.",
-    "experience.organ.desc2": "Их Британи даяар сүмүүдэд Ням гаргийн үйлчлэлийг удирдав.",
-    
+    "experience.organ.desc1": "Орган хөгжмөөр тоглолт хийж, шашны ёслолын үеэр найрал дуучдыг дагалдуулсан.",
+    "experience.organ.desc2": "Их Британийн олон сүмд Ням гаргийн мөргөлүүдэд хөгжмөөр үйлчилсэн.",
+
     // Education
     "education.title": "Боловсрол",
-    "education.york.degree": "Компьютерийн шинжлэх ухаан, хиймэл оюун ухааны бакалавр",
+    "education.york.degree": "Компьютерын шинжлэх ухаан ба хиймэл оюун ухааны бакалавр",
     "education.york.school": "Йоркийн Их Сургууль",
     "education.york.date": "2028 оны 7-р сард төгсөнө",
-    "education.york.desc1": "Unreal Engine болон C++ ашиглан тоглоомын механикт төвлөрсөн хувийн тоглоом хөгжүүлэх төсөл бэлтгэж байна.",
-    "education.york.desc2": "Modules include Data structures, [Hardware systems](https://simplecpudesign.com/minimal_cpu/index.html) and Human computer interaction",
-    "education.york.desc3": "President of [Game development](https://yorksu.org/activities/view/game-development-society) society and Mongolian society",
+    "education.york.desc1": "Unreal Engine болон C++ ашиглан тоглоомын механикт төвлөрсөн хувийн тоглоом хөгжүүлэлтийн төсөл бэлтгэж байна.",
+    "education.york.desc2": "Судалж буй хичээлүүд: Data Structures, Hardware Systems, Human-Computer Interaction",
+    "education.york.desc3": "Game Development Society болон Mongolian Society-ийн ерөнхийлөгч",
 
     "education.ai.degree": "Хиймэл оюун ухааны сургалт",
     "education.ai.school": "AI Academy Asia",
     "education.ai.location": "Улаанбаатар, Монгол",
     "education.ai.date": "2025 оны 8-р сар",
-    "education.ai.desc1": "Хиймэл оюун ухааны төсөлд зориулж чатбот бүтээж, хэрэглэгчийн асуултыг ухаалгаар боловсруулахын тулд байгалийн хэлний боловсруулалт (NLP) техникийг хэрэгжүүлэв.",
-    
+    "education.ai.desc1": "Чатбот бүтээж, хэрэглэгчийн асуултыг ухаалгаар боловсруулахын тулд байгалийн хэл боловсруулалтын (NLP) аргуудыг ашигласан.",
+
     "education.fullstack.degree": "Full Stack хөгжүүлэлт",
     "education.fullstack.school": "ITCareerswitch",
     "education.fullstack.date": "2025 оны 7-р сар",
-    "education.fullstack.desc1": "React ашиглан статик HTML/CSS загварыг динамик, интерактив веб болон апп интерфэйс болгон хөрвүүлэв.",
-    "education.fullstack.desc2": "Функц тест хийж програм хангамжийн алдааг олж засварлав.",
-    
-    "education.leeds.degree": "Физикийн диплом",
-    "education.leeds.school": "Лийдсийн Их Сургууль",
-    "education.leeds.date": "2021 оны 6-р сар",
-    "education.leeds.desc1": "Статистик механик, Квант механик, Цахилгаан соронзон, Бионанотехнологийн хичээлүүд.",
-    "education.leeds.desc2": "Python дээр машин сургалтын аргыг хэрэглэн биозадлагддаг, байгальд ээлтэй целлюлозын ширхэг хөгжүүлэх [судалгааны баг](https://www.leeds.ac.uk/news-enterprise/news/article/4718/reducing-the-environmental-impact-of-cellulose-films)тай хамтран ажилласан.",
-    "education.leeds.desc3": "Participated in a [game jam](https://v3.globalgamejam.org/2020/games/village-school-5) using Raylib.",
+    "education.fullstack.desc1": "React ашиглан статик HTML/CSS загваруудыг динамик, интерактив вэб болон апп интерфэйс болгон хөрвүүлсэн.",
+    "education.fullstack.desc2": "Feature testing ашиглан програм хангамжийн алдааг илрүүлж, засварласан.",
 
-    "education.school.degree": "Дунд сургууль",
+    "education.leeds.degree": "Физикийн дээд боловсролын диплом",
+    "education.leeds.school": "Лидсийн Их Сургууль",
+    "education.leeds.date": "2021 оны 6-р сар",
+    "education.leeds.desc1": "Судалсан хичээлүүд: Статистик механик, Квант механик, Цахилгаан соронзон орон, Бионанотехнологи.",
+    "education.leeds.desc2": "Биозадралтай, байгальд ээлтэй целлюлозон ширхэгт материал боловсруулах судалгааны багтай хамтран ажиллаж, Python дээр машин сургалтын аргыг ашигласан.",
+    "education.leeds.desc3": "Raylib ашиглан game jam-д оролцсон.",
+
+    "education.school.degree": "Ахлах сургууль",
     "education.school.school": "Christ's Hospital School",
     "education.school.location": "Хоршам, Вест Сассекс",
     "education.school.date": "2018 оны 7-р сар",
-    "education.school.desc1": "A-level: Математик, Нэмэлт Математик: A*,C | ��ятад хэл: A | Физик: B.",
-    "education.school.desc2": "GCSE: Математик, Нэмэлт Математик: A*, A** | Физик, Хими, Биологи: A*, A*, A* | Англи хэл: C",
-    
+    "education.school.desc1": "A-level: Математик, Нэмэлт математик: A*, C | Мандарин хэл: A | Физик: B.",
+    "education.school.desc2": "GCSE: Математик, Нэмэлт математик: A*, A** | Физик, Хими, Биологи: A*, A*, A* | Англи хэл: C",
+
     // Skills
     "skills.title": "Ур чадвар",
     "skills.programming": "Програмчлалын хэлүүд",
     "skills.programming.list": "Python, Java, C++, JavaScript",
-    "skills.web": "Веб хөгжү��лэлт",
+    "skills.web": "Вэб хөгжүүлэлт",
     "skills.web.list": "React, Node.js, Express, REST APIs",
-    "skills.data": "Өгөгдөл & Хиймэл оюун ухаан",
-    "skills.data.list": "scikit-learn, NLP, кластерчлал, загвар үнэлгээ",
+    "skills.data": "Өгөгдөл ба хиймэл оюун ухаан",
+    "skills.data.list": "scikit-learn, NLP, кластерчлал, загварын үнэлгээ",
     "skills.databases": "Өгөгдлийн сан",
     "skills.databases.list": "MySQL, MongoDB",
     "skills.dev": "Хөгжүүлэлтийн хэрэгслүүд",
-    "skills.dev.list": "Git/GitHub, функц тест",
-    
+    "skills.dev.list": "Git/GitHub, feature testing",
+
     // Volunteering
     "volunteering.title": "Сайн дурын ажил",
-    "volunteering.desc1": "Европ дахь Монгол эмэгтэйчүүдийн хөгжлийн [холбооноос](https://admwe.org) Антверпен, Парис, Ромд зохион байгуулсан Олон улсын эмэгтэйчүүдийн бизнес форум, шагналын ёслолыг зохион байгуулахад сайн дураараа туслав.",
-    "volunteering.desc2": "Лорд Мэйорын 800 жилийн ойн сангийн хандив цуглуулах үйл ажиллагааг удирдаж, буяны байгууллагад £500 цуглуулав.",
-    
+    "volunteering.desc1": "Европ дахь Монгол эмэгтэйчүүдийн хөгжлийн холбооноос Антверпен, Парис, Ром хотуудад зохион байгуулсан Олон улсын эмэгтэйчүүдийн бизнес форум болон шагнал гардуулах ёслолуудын зохион байгуулалтад сайн дураараа тусалсан.",
+    "volunteering.desc2": "Lord Mayor's 800th Anniversary Trust-ийн хандивын үйл ажиллагааг удирдан, £500 хандив босгосон.",
+
     // Recordings
-    "recordings.title": "Органы бичлэгүүд",
-    "recordings.desc": "Их Британи даяар янз бүрийн газруудад хийсэн органы тоглолтуудыг сонсоорой.",
+    "recordings.title": "Орган хөгжмийн бичлэгүүд",
+    "recordings.desc": "Их Британийн янз бүрийн газруудад бичүүлсэн миний орган хөгжмийн тоглолтуудыг сонсоорой.",
     "recordings.link": "Бүх бичлэгийг үзэх",
-    
+
     // Contact
     "contact.title": "Холбоо барих",
     "contact.email": "Имэйл",
     "contact.phone": "Утас",
     "contact.location": "Байршил",
     "contact.cta": "Холбогдох",
-    
+
     // Footer
     "footer.rights": "Бүх эрх хуулиар хамгаалагдсан.",
   }
