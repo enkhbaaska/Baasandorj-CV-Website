@@ -4,11 +4,11 @@ import { useLanguage } from "@/lib/language-context"
 import { RenderTextWithLinks } from "@/lib/render-text-with-links"
 
 const skillCategories = [
-  { titleKey: "skills.programming", listKey: "skills.programming.list" },
+  { titleKey: "skills.languages", listKey: "skills.languages.list" },
+  { titleKey: "skills.ml", listKey: "skills.ml.list" },
   { titleKey: "skills.web", listKey: "skills.web.list" },
-  { titleKey: "skills.data", listKey: "skills.data.list" },
-  { titleKey: "skills.databases", listKey: "skills.databases.list" },
-  { titleKey: "skills.dev", listKey: "skills.dev.list" },
+  { titleKey: "skills.tools", listKey: "skills.tools.list" },
+  { titleKey: "skills.spoken", listKey: "skills.spoken.list" },
 ]
 
 export function Skills() {

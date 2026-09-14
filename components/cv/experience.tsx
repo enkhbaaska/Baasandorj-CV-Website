@@ -4,30 +4,49 @@ import { useLanguage } from "@/lib/language-context"
 import { RenderTextWithLinks } from "@/lib/render-text-with-links"
 
 
-const experiences = [
+interface ExperienceItem {
+  roleKey: string
+  companyKey: string
+  taglineKey?: string
+  locationKey: string
+  dateKey: string
+  descKeys: string[]
+  // Omit when the company field itself carries its links as markdown
+  url?: string
+}
+
+const experiences: ExperienceItem[] = [
+  {
+    roleKey: "experience.un.role",
+    companyKey: "experience.un.company",
+    locationKey: "experience.un.location",
+    dateKey: "experience.un.date",
+    descKeys: ["experience.un.desc1", "experience.un.desc2", "experience.un.desc3"],
+    url: "https://unccdcop17.org/?lang=en",
+  },
+  {
+    roleKey: "experience.mbank.role",
+    companyKey: "experience.mbank.company",
+    taglineKey: "experience.mbank.tagline",
+    locationKey: "experience.mbank.location",
+    dateKey: "experience.mbank.date",
+    descKeys: ["experience.mbank.desc1", "experience.mbank.desc2", "experience.mbank.desc3"],
+    url: "https://m-bank.mn/",
+  },
   {
     roleKey: "experience.ubmetro.role",
     companyKey: "experience.ubmetro.company",
     locationKey: "experience.ubmetro.location",
     dateKey: "experience.ubmetro.date",
-    descKeys: ["experience.ubmetro.desc1", "experience.ubmetro.desc2", "experience.ubmetro.desc3", "experience.ubmetro.desc4"],
-    url: "https://ipiu.mn/metro",
+    descKeys: ["experience.ubmetro.desc1", "experience.ubmetro.desc2", "experience.ubmetro.desc3"],
+    url: "https://www.ubmetro.com/en",
   },
   {
-    roleKey: "experience.mbank.role",
-    companyKey: "experience.mbank.company",
-    locationKey: "experience.mbank.location",
-    dateKey: "experience.mbank.date",
-    descKeys: ["experience.mbank.desc1", "experience.mbank.desc4", "experience.mbank.desc2", "experience.mbank.desc3"],
-    url: "https://m-bank.mn/en",
-  },
-  {
-    roleKey: "experience.upwork.role",
-    companyKey: "experience.upwork.company",
-    locationKey: "experience.upwork.location",
-    dateKey: "experience.upwork.date",
-    descKeys: ["experience.upwork.desc1", "experience.upwork.desc2", "experience.upwork.desc3", "experience.upwork.desc4"],
-    url: "https://www.upwork.com",
+    roleKey: "experience.tutoring.role",
+    companyKey: "experience.tutoring.company",
+    locationKey: "experience.tutoring.location",
+    dateKey: "experience.tutoring.date",
+    descKeys: ["experience.tutoring.desc1", "experience.tutoring.desc2", "experience.tutoring.desc3"],
   },
   {
     roleKey: "experience.organ.role",
@@ -62,9 +81,15 @@ export function Experience() {
                       {t(exp.companyKey)}
                     </a>
                   ) : (
-                    t(exp.companyKey)
+                    <RenderTextWithLinks text={t(exp.companyKey)} />
                   )}
                 </span>
+                {exp.taglineKey && (
+                  <span className="text-xs text-muted-foreground italic">
+                    {" — "}
+                    {t(exp.taglineKey)}
+                  </span>
+                )}
               </div>
               <div className="text-xs text-muted-foreground shrink-0 sm:text-right">
                 <span>{t(exp.dateKey)}</span>

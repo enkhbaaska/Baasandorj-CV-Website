@@ -3,31 +3,26 @@
 import { useLanguage } from "@/lib/language-context"
 import { RenderTextWithLinks } from "@/lib/render-text-with-links"
 
-const educationItems = [
+interface EducationItem {
+  degreeKey: string
+  schoolKey?: string
+  dateKey?: string
+  descKeys: string[]
+  location?: string
+  locationKey?: string
+  url?: string
+  current?: boolean
+}
+
+const educationItems: EducationItem[] = [
   {
     degreeKey: "education.york.degree",
     schoolKey: "education.york.school",
     dateKey: "education.york.date",
-    descKeys: ["education.york.desc1", "education.york.desc2","education.york.desc3"],
+    descKeys: ["education.york.desc1", "education.york.desc2","education.york.desc3","education.york.desc4"],
     location: "York, UK",
     url:"https://www.york.ac.uk/study/undergraduate/courses/bsc-computer-science/#course-content",
     current: true,
-  },
-  {
-    degreeKey: "education.ai.degree",
-    schoolKey: "education.ai.school",
-    dateKey: "education.ai.date",
-    descKeys: ["education.ai.desc1"],
-    locationKey: "education.ai.location",
-    url: "https://www.ai-academy.asia/en",
-  },
-  {
-    degreeKey: "education.fullstack.degree",
-    schoolKey: "education.fullstack.school",
-    dateKey: "education.fullstack.date",
-    descKeys: ["education.fullstack.desc1", "education.fullstack.desc2"],
-    location: "Online",
-    url: "https://itcareerswitch.co.uk/",
   },
   {
     degreeKey: "education.leeds.degree",
@@ -44,6 +39,10 @@ const educationItems = [
     descKeys: ["education.school.desc1", "education.school.desc2"],
     locationKey: "education.school.location",
     url: "https://www.christs-hospital.org.uk/",
+  },
+  {
+    degreeKey: "education.certificates.degree",
+    descKeys: ["education.certificates.desc1"],
   },
 ]
 
@@ -66,16 +65,20 @@ export function Education() {
                   <span className="font-semibold text-sm text-foreground">
                     {t(edu.degreeKey)}
                   </span>
-                  {" · "}
-                  <span className="text-sm text-primary font-medium">
-                    {edu.url ? (
-                      <a href={edu.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        {t(edu.schoolKey)}
-                      </a>
-                    ) : (
-                      t(edu.schoolKey)
-                    )}
-                  </span>
+                  {edu.schoolKey && (
+                    <>
+                      {" · "}
+                      <span className="text-sm text-primary font-medium">
+                        {edu.url ? (
+                          <a href={edu.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                            {t(edu.schoolKey)}
+                          </a>
+                        ) : (
+                          t(edu.schoolKey)
+                        )}
+                      </span>
+                    </>
+                  )}
                   {edu.current && (
                     <span className="ml-2 px-1.5 py-0.5 text-xs bg-primary/10 text-primary rounded font-medium">
                       Current
@@ -83,11 +86,17 @@ export function Education() {
                   )}
                 </div>             
               </div>
-              <div className="text-xs text-muted-foreground shrink-0 sm:text-right">
-                <span>{t(edu.dateKey)}</span>
-                <span className="mx-1">·</span>
-                <span>{edu.locationKey ? t(edu.locationKey) : edu.location}</span>
-              </div>
+              {edu.dateKey && (
+                <div className="text-xs text-muted-foreground shrink-0 sm:text-right">
+                  <span>{t(edu.dateKey)}</span>
+                  {(edu.locationKey || edu.location) && (
+                    <>
+                      <span className="mx-1">·</span>
+                      <span>{edu.locationKey ? t(edu.locationKey) : edu.location}</span>
+                    </>
+                  )}
+                </div>
+              )}
             </div>
             <ul className="space-y-0.5">
               {edu.descKeys.map((descKey, i) => (

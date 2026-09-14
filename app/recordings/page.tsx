@@ -1,12 +1,46 @@
 "use client"
 
-import { LanguageProvider } from "@/lib/language-context"
+import { useLanguage } from "@/lib/language-context"
 import { Header } from "@/components/cv/header"
 import { Footer } from "@/components/cv/footer"
-import { Music, ArrowLeft } from "lucide-react"
+import { Music, ArrowLeft, X } from "lucide-react"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
-
+// To add a certificate: drop the image in public/certificates/ and add an entry
+// here. Use file names without spaces, e.g. /certificates/abrsm-grade-8.jpg
+const certificates: { title: string; issuer?: string; date?: string; image: string }[] = [
+  {
+    title: "Grade 8 Organ — Distinction",
+    issuer: "ABRSM",
+    date: "2016",
+    image: "/certificates/abrsm-grade-8-organ.jpg",
+  },
+  {
+    title: "Grade 8 Piano — Distinction",
+    issuer: "ABRSM",
+    date: "2015",
+    image: "/certificates/abrsm-grade-8-piano.jpg",
+  },
+  {
+    title: "The Organ Scholar Experience",
+    issuer: "Royal College of Organists",
+    date: "Jul 2016",
+    image: "/certificates/rco-organ-scholar-experience.jpg",
+  },
+  {
+    title: "Summer School",
+    issuer: "Oundle for Organists",
+    date: "Jul 2016",
+    image: "/certificates/oundle-for-organists-summer-school.jpg",
+  },
+  {
+    title: "Organ Recital",
+    issuer: "Christ's Hospital Chapel",
+    date: "Apr 2018",
+    image: "/certificates/christs-hospital-organ-recital.jpg",
+  },
+]
 
 const recordings = [
   {
@@ -47,9 +81,20 @@ const recordings = [
 ]
 
 export default function RecordingsPage() {
+  const { t } = useLanguage()
+  const [lightbox, setLightbox] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (!lightbox) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null)
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [lightbox])
+
   return (
-    <LanguageProvider>
-      <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
           {/* Page Header */}
@@ -60,7 +105,7 @@ export default function RecordingsPage() {
                 className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground text-sm mb-5 transition-colors"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Back to CV
+                {t("recordings.back")}
               </Link>
               <div className="flex items-center gap-5">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white/20 shrink-0">
@@ -71,9 +116,9 @@ export default function RecordingsPage() {
                   />
                 </div>
                 <div>
-                  <h1 className="font-serif text-2xl md:text-3xl font-bold">Organ Recordings</h1>
+                  <h1 className="font-serif text-2xl md:text-3xl font-bold">{t("recordings.title")}</h1>
                   <p className="text-primary-foreground/70 text-sm mt-1">
-                    Listen to my organ performances
+                    {t("recordings.subtitle")}
                   </p>
                 </div>
               </div>
@@ -107,10 +152,68 @@ export default function RecordingsPage() {
               ))}
             </div>
 
+            {/* Certificates */}
+            {certificates.length > 0 && (
+              <div className="mb-8">
+                <h2 className="font-serif text-xl font-bold text-foreground mb-1">{t("recordings.certificates")}</h2>
+                <div className="w-10 h-0.5 bg-primary mb-4" />
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {certificates.map((cert) => (
+                    <button
+                      key={cert.image}
+                      type="button"
+                      onClick={() => setLightbox(cert.image)}
+                      className="text-left bg-card border border-border rounded-lg overflow-hidden hover:border-primary/30 hover:shadow-sm transition-all"
+                    >
+                      {/* contain, not cover: these are documents, so cropping loses text */}
+                      <img
+                        src={cert.image}
+                        alt={cert.title}
+                        className="w-full aspect-[3/4] object-contain bg-secondary p-2"
+                      />
+                      <div className="p-3">
+                        <p className="font-medium text-foreground text-sm">{cert.title}</p>
+                        {(cert.issuer || cert.date) && (
+                          <p className="text-xs text-muted-foreground">
+                            {[cert.issuer, cert.date].filter(Boolean).join(" · ")}
+                          </p>
+                        )}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
           </div>
         </main>
         <Footer />
-      </div>
-    </LanguageProvider>
+
+        {/* Full-size certificate view */}
+        {lightbox && (
+          <div
+            className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+            onClick={() => setLightbox(null)}
+            role="dialog"
+            aria-modal="true"
+          >
+            <button
+              type="button"
+              onClick={() => setLightbox(null)}
+              aria-label="Close"
+              className="absolute top-4 right-4 text-white/80 hover:text-white"
+            >
+              <X className="h-6 w-6" />
+            </button>
+            <img
+              src={lightbox}
+              alt=""
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+        </div>
+      )}
+    </div>
   )
 }
