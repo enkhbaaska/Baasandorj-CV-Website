@@ -104,11 +104,10 @@ const translations = {
     
     // Projects
     "projects.title": "Projects",
-    "projects.sign.name": "Mongolian Sign Language Recognition",
-    "projects.sign.sub": "[Ember](https://ember.mn)",
+    "projects.sign.name": "[Mongolian Sign Language Recognition](https://github.com/enkhbaaska/ember-project)",
+    "projects.sign.sub": "Ember",
     "projects.sign.date": "Jul 2026 - Aug 2026",
-    "projects.sign.desc1": "Trained a computer vision model that converts video of a person signing into Mongolian text. MediaPipe extracts hand and body landmarks from each frame, PyTorch classifier maps the landmarks to signs.",
-    "projects.sign.desc2": "Mongolian Sign Language had no existing training corpus, so designed a capture tool and collected the dataset from scratch against a verified 1,236-sign reference dictionary.",
+    "projects.sign.desc1": "Trained a computer vision model that recognises signs from video, using MediaPipe to extract hand and body landmarks and PyTorch to classify each sequence; 59.2% accuracy across 100 American Sign Language signs, against 1% by chance. Rebuilt the public dataset's evaluation after finding it reused the same people for training and testing, so results are measured only on unseen signers. Groundwork for Mongolian Sign Language, for which no training data exists.",
 
     "projects.script.name": "[Mongolian Script Converter](https://huggingface.co/spaces/zqt521/mongolian-converter)",
     "projects.script.sub": "Python, PyTorch, NLP",
@@ -116,10 +115,10 @@ const translations = {
     "projects.script.desc1": "Implemented a bidirectional Cyrillic ↔ traditional Mongolian script converter in PyTorch, trained on open-source corpus.",
     "projects.script.desc2": "Cyrillic lost distinctions the old script kept, meaning conversion isn't always one-to-one. Added confidence scores so uncertain words get flagged for review.",
 
-    "projects.no2.name": "Satellite NO₂ Monitoring over Ulaanbaatar",
-    "projects.no2.sub": "[Google Earth Engine](https://earthengine.google.com/) Sentinel-5P TROPOMI",
+    "projects.no2.name": "[Satellite NO₂ Monitoring over Ulaanbaatar](https://github.com/enkhbaaska/Satellite-Monitoring)",
+    "projects.no2.sub": "Google Earth Engine Sentinel-5P TROPOMI",
     "projects.no2.date": "Jun 2026",
-    "projects.no2.desc1": "Analysed Sentinel-5P TROPOMI tropospheric NO₂ data over Ulaanbaatar to test for a winter heating signal from the city's ger districts.",
+    "projects.no2.desc1": "Analysed 8 years of Sentinel-5P TROPOMI tropospheric NO₂ data over paired urban and rural regions using a self-built, end-to-end Python pipeline on the Google Earth Engine API, testing for a signal from Ulaanbaatar's 2019 raw coal ban.",
 
     "projects.hackathon.name": "Harvard HSIL [Hackathon](https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/) 2026 — London Hub",
     "projects.hackathon.sub": "UCL Global Business School for Health · UCL East",
@@ -252,11 +251,10 @@ const translations = {
 
     // Projects
     "projects.title": "Төслүүд",
-    "projects.sign.name": "Монгол дохионы хэлний таних систем",
-    "projects.sign.sub": "[Ember](https://ember.mn)",
+    "projects.sign.name": "[Монгол дохионы хэлний таних систем](https://github.com/enkhbaaska/ember-project)",
+    "projects.sign.sub": "Ember",
     "projects.sign.date": "2026 оны 7-р сар - 2026 оны 8-р сар",
-    "projects.sign.desc1": "Дохиогоор ярьж буй хүний бичлэгийг монгол бичвэр болгон хөрвүүлдэг компьютер хараанчлалын загвар сургасан. MediaPipe нь кадр бүрээс гар болон биеийн цэгүүдийг ялгаж, PyTorch ангилагч эдгээр цэгүүдийг дохионд харгалзуулдаг.",
-    "projects.sign.desc2": "Монгол дохионы хэлэнд сургалтын өгөгдлийн сан урьд нь байгаагүй тул бичлэг цуглуулах хэрэгсэл зохион бүтээж, баталгаажсан 1,236 дохио бүхий толь бичигт тулгуурлан өгөгдлийн санг эхнээс нь бүрдүүлсэн.",
+    "projects.sign.desc1": "MediaPipe ашиглан гар, биеийн цэгүүдийг ялган, PyTorch-оор дараалал бүрийг ангилдаг компьютер хараанчлалын загвар сургасан; Америкийн дохионы хэлний 100 дохио дээр 59.2% нарийвчлалд хүрсэн нь санамсаргүй таамгийн 1%-тай харьцуулахад өндөр үзүүлэлт юм. Нийтийн өгөгдлийн сан сургалт болон шалгалтад ижил хүмүүсийг давхардуулан ашиглаж байгааг илрүүлээд үнэлгээг нь дахин зохион байгуулснаар үр дүнг зөвхөн өмнө нь тааралдаагүй дохиочид дээр хэмждэг болсон. Энэ нь сургалтын өгөгдөл огт байхгүй монгол дохионы хэлний суурь ажил юм.",
 
     "projects.script.name": "[Монгол бичиг хөрвүүлэгч](https://huggingface.co/spaces/zqt521/mongolian-converter)",
     "projects.script.sub": "Python, PyTorch, NLP",
@@ -264,10 +262,10 @@ const translations = {
     "projects.script.desc1": "Кирилл ↔ монгол бичгийн хоёр талт хөрвүүлэгчийг PyTorch дээр хэрэгжүүлж, нээлттэй эхийн корпус дээр сургасан.",
     "projects.script.desc2": "Кирилл үсэг нь монгол бичгийн зарим ялгааг алдсан тул хөрвүүлэлт үргэлж нэг-нэгээр тохирдоггүй. Иймд эргэлзээтэй үгсийг шалгуулахаар тэмдэглэх итгэлцлийн оноог нэмсэн.",
 
-    "projects.no2.name": "Улаанбаатар дээрх NO₂-ын хиймэл дагуулын хяналт",
-    "projects.no2.sub": "[Google Earth Engine](https://earthengine.google.com/) Sentinel-5P TROPOMI",
+    "projects.no2.name": "[Улаанбаатар дээрх NO₂-ын хиймэл дагуулын хяналт](https://github.com/enkhbaaska/Satellite-Monitoring)",
+    "projects.no2.sub": "Google Earth Engine Sentinel-5P TROPOMI",
     "projects.no2.date": "2026 оны 6-р сар",
-    "projects.no2.desc1": "Sentinel-5P TROPOMI-ийн тропосферийн NO₂-ын өгөгдлийг Улаанбаатар дээр шинжилж, гэр хорооллын өвлийн халаалтын нөлөөг илрүүлэх оролдлого хийсэн.",
+    "projects.no2.desc1": "Sentinel-5P TROPOMI-ийн тропосферийн NO₂-ын 8 жилийн өгөгдлийг хот, хөдөөгийн хос бүсэд Google Earth Engine API дээр өөрөө бүтээсэн бүрэн автомат Python шугамаар шинжилж, Улаанбаатарын 2019 оны түүхий нүүрсний хоригийн нөлөөг шалгасан.",
 
     "projects.hackathon.name": "Harvard HSIL [Hackathon](https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/) 2026 — Лондонгийн төв",
     "projects.hackathon.sub": "UCL Global Business School for Health · UCL East",

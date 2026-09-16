@@ -17,7 +17,7 @@ const projects: ProjectItem[] = [
     nameKey: "projects.sign.name",
     subKey: "projects.sign.sub",
     dateKey: "projects.sign.date",
-    descKeys: ["projects.sign.desc1", "projects.sign.desc2"],
+    descKeys: ["projects.sign.desc1"],
   },
   {
     nameKey: "projects.script.name",
